@@ -1,0 +1,10 @@
+@import "basic/basic";
+@import "basic/basic";
+@import "component/header";
+@import "component/hero";
+.conatiner {
+    width: 90%;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
