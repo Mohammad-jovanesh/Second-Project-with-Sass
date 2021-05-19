@@ -28,6 +28,28 @@
             text-align: center;
             padding: 1rem;
             width: 100%;
+            position: relative;
+            cursor: pointer;
+            margin-bottom: 2rem;
+            &:after {
+                @include BorderFooter;
+                top: 0;
+            }
+            &:before {
+                @include BorderFooter;
+                bottom: 0;
+                transition-delay: 0.1s;
+            }
+            &:hover {
+                &::after {
+                    transform: translateX(-35%) scaleX(1);
+                    transition: transform 0.5s ease;
+                }
+                &:before {
+                    transform: translateX(-35%) scaleX(1);
+                    transition: transform 0.5s ease 0.1s;
+                }
+            }
         }
 
         .Footer_Social {
@@ -48,6 +70,9 @@
         .Footer_nav {
             width: 50%;
             margin: 2rem auto;
+            border-top: 2px solid Color(3);
+            padding-top: 1.5rem;
+
             &_list {
                 @include DispalyFlex(center, space-between);
                 .Footer_nav_item {

@@ -3,7 +3,7 @@
     height: 60vh;
     @include DispalyFlex(center, center);
     flex-direction: column;
-    background-image: url(/image/call-to-action-background.jpg);
+    background-image: url(../image/call-to-action-background.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -11,6 +11,7 @@
     background-color: #16db93;
     background-blend-mode: multiply;
     color: Color(3);
+
     .cta_text {
         margin-bottom: 1rem;
     }

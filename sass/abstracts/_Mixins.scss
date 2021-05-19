@@ -3,3 +3,14 @@
     align-items: $align;
     justify-content: $justify;
 }
+
+@mixin BorderFooter {
+    content: "";
+    position: absolute;
+    width: 60%;
+    background: Color(3);
+    height: 2px;
+    left: 40%;
+    transform: translateX(-30%) scaleX(0);
+    transition: transform 0.5s ease;
+}
