@@ -1,16 +1,12 @@
-* { padding: 0; margin: 0; box-sizing: border-box; }
+*, *::after, *::after { padding: 0; margin: 0; box-sizing: border-box; }
 
 ul { list-style: none; }
 
 a { color: #000000; text-decoration: none; }
 
-* { padding: 0; margin: 0; box-sizing: border-box; }
+html { font-family: "Roboto", sans-serif; }
 
-ul { list-style: none; }
-
-a { color: #000000; text-decoration: none; }
-
-header { height: 100px; width: 100%; background-color: #048ca8; position: fixed; top: 0; left: 0; }
+header { height: 100px; width: 100%; position: fixed; top: 0; left: 0; }
 
 header .grid { display: flex; align-items: center; justify-content: center; }
 
@@ -30,16 +26,22 @@ header .nav_list_item_link:hover { color: #444; transition: all 0.2s ease; }
 
 .Hero .grid .hero_content { color: #fff; flex-basis: 66.66%; }
 
-.Hero .grid .hero_content .hero_heading { font-size: 3rem; font-weight: 500; margin-bottom: 1rem; letter-spacing: 0.2rem; }
+.Hero .grid .hero_content .hero_heading { font-size: 2rem; font-weight: 300; margin-bottom: 1rem; letter-spacing: 0.2rem; text-transform: uppercase; }
 
 .Hero .grid .hero_content .hero_heading .Next_text { font-weight: 900; }
 
-.Hero .grid .hero_content .hero_text { width: 100%; font-size: 1rem; margin-bottom: 1rem; padding: 1rem; }
+.Hero .grid .hero_content .hero_text { width: 100%; font-size: 1rem; margin-bottom: 1rem; }
 
-.Hero .grid .hero_content .hero_btns { background-color: red; padding: 1rem; }
+.Hero .grid .hero_content .hero_btns { padding: 1.5rem 0rem 1rem; }
 
-.Hero .grid .hero_content .hero_btns_learn { border: 2px solid #fff; color: #fff; padding: 0.5rem 1.5rem; font-size: 1.2rem; }
+.Hero .grid .hero_content .hero_btns_learn { border: 2px solid #fff; color: #fff; padding: 1rem 2rem; font-size: 0.8rem; margin-right: 0.5rem; font-weight: 100; text-transform: uppercase; transition: all 0.2s ease; }
 
-.Hero .grid .hero_image { flex-basis: 33.33%; }
+.Hero .grid .hero_content .hero_btns_learn:hover { transition: all 0.2s ease; background-color: #fff; color: #048ca8; }
+
+.Hero .grid .hero_content .hero_btns_GetApp { color: #fff; padding: 1rem 2rem; font-size: 0.8rem; background-color: #d31869; text-transform: uppercase; transition: all 0.2s ease; font-weight: 100; border: 2px solid #d31869; }
+
+.Hero .grid .hero_content .hero_btns_GetApp:hover { background-color: #770e3b; border: 2px solid #770e3b; transition: all 0.2s ease; }
+
+.Hero .grid .hero_image { flex-basis: 33.33%; margin-top: 12rem; }
 
 .conatiner { width: 90%; max-width: 1200px; height: 100%; margin: 0 auto; }
