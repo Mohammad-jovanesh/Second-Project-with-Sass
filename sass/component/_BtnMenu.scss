@@ -1,0 +1,47 @@
+.Btm_menu {
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    z-index: 200;
+    cursor: pointer;
+    display: none;
+    @include Media(sm) {
+        display: block;
+    }
+    &.Close_btn {
+        .line {
+            &:nth-child(1) {
+                top: 50%;
+                transform: rotateZ(45deg) translate(-1px, -50%);
+            }
+            &:nth-child(2) {
+                opacity: 0;
+                transition: all 0.5s ease;
+            }
+            &:nth-child(3) {
+                bottom: 50%;
+                transform: rotateZ(-45deg) translate(0px, 50%);
+            }
+        }
+    }
+    .line {
+        position: absolute;
+        width: 100%;
+        left: 0%;
+        height: 5px;
+        background-color: Color(3);
+        transition: all 0.5s ease;
+        &:nth-child(1) {
+            top: 5%;
+        }
+        &:nth-child(2) {
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &:nth-child(3) {
+            bottom: 5%;
+        }
+    }
+}

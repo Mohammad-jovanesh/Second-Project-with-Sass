@@ -4,6 +4,24 @@
     min-height: 800px;
     background: Color(5);
     padding-top: 1rem !important;
+    @include Media(md) {
+        height: 60vh !important;
+        min-height: 650px;
+    }
+    @include Media(sm) {
+        min-height: 400px;
+        padding-top: 5rem !important;
+        .grid {
+            .hero_content {
+                flex-basis: 100% !important;
+                text-align: center;
+            }
+        }
+        .hero_image {
+            display: none;
+        }
+    }
+
     .grid {
         display: flex;
         align-items: center;
@@ -11,6 +29,9 @@
             color: Color(3);
             flex-basis: 66.66%;
             .hero_heading {
+                @include Media(md) {
+                    font-size: 1.5rem;
+                }
                 font-size: 2rem;
                 font-weight: 300;
                 margin-bottom: 1rem;
@@ -21,6 +42,9 @@
                 }
             }
             .hero_text {
+                @include Media(md) {
+                    font-size: 0.9rem;
+                }
                 width: 100%;
                 font-size: 1rem;
                 margin-bottom: 1rem;
@@ -53,6 +77,12 @@
         .hero_image {
             flex-basis: 33.33%;
             margin-top: 12rem;
+            @include Media(md) {
+                margin-top: 9rem !important;
+            }
+            img {
+                width: 100%;
+            }
         }
     }
 }

@@ -2,6 +2,45 @@
     width: 90%;
     height: 80%;
     margin-left: 10%;
+    &.Open_nav {
+        transform: scaleX(1);
+        transition: all 0.3s ease;
+    }
+    @include Media(sm) {
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: all 0.3s ease;
+        position: fixed;
+        height: 100vh;
+        background-color: Color(4);
+        top: 0;
+        left: 0;
+        z-index: 100;
+        margin-left: 0%;
+        width: 100%;
+        padding: 2rem auto !important;
+        &_list {
+            flex-direction: column;
+            justify-content: center !important;
+            &_item {
+                width: 100%;
+                text-align: center;
+                height: 10%;
+                margin: 1rem auto;
+                display: flex;
+                &:hover {
+                    background-color: #444;
+                    cursor: pointer;
+                }
+                &_link {
+                    margin: auto;
+                    &:hover {
+                        color: unset !important;
+                    }
+                }
+            }
+        }
+    }
     &_list {
         @include DispalyFlex(center, space-between);
         height: 100%;

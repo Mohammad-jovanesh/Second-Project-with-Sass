@@ -4,7 +4,45 @@
     background-color: Color(1);
     position: relative;
     display: flex;
+    @include Media(lg) {
+        .title-box {
+            &_title {
+                font-size: 1rem !important;
+            }
+            &_text {
+                font-size: 0.7rem;
+            }
+        }
+        .Promo_cantainer {
+            &_content {
+                &_heading {
+                    font-size: 1.5rem !important;
+                }
+            }
+        }
+    }
+    @include Media(sm) {
+        .title-box {
+            width: 80%;
+            padding: 1rem 2rem !important;
+            top: -2rem !important;
+        }
+        .Promo_cantainer {
+            padding-left: 1rem !important;
+            padding-right: 1rem !important;
+            &_content {
+                width: 90% !important;
+                text-align: center;
+                &_text_2 {
+                    margin-right: 0 !important;
+                }
+            }
 
+            &_image {
+                display: none;
+            }
+        }
+    }
     .title-box {
         position: absolute;
         max-width: 700px;
