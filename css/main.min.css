@@ -102,4 +102,6 @@ header .logo { width: 300px; height: 80%; }
 
 .Footer_container .Footer_nav_list { display: flex; align-items: center; justify-content: space-between; }
 
+.Footer_container .Footer_nav_list .Footer_nav_item .Footer_nav_link { color: #fff; }
+
 .conatiner { width: 90%; max-width: 1200px; height: 100%; margin: 0 auto; }

@@ -51,6 +51,9 @@
             &_list {
                 @include DispalyFlex(center, space-between);
                 .Footer_nav_item {
+                    .Footer_nav_link {
+                        color: Color(3);
+                    }
                 }
             }
         }
