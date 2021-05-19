@@ -22,7 +22,7 @@
         z-index: -1;
     }
     &_container {
-        @include Media(md) {
+        @include Media(sm) {
             width: 90% !important;
         }
         width: 70%;
@@ -58,7 +58,7 @@
         .Footer_Social {
             width: 50%;
             margin: 1rem auto;
-            @include Media(md) {
+            @include Media(sm) {
                 width: 100% !important;
             }
             &_list {
@@ -78,7 +78,7 @@
             margin: 2rem auto;
             border-top: 2px solid Color(3);
             padding-top: 1.5rem;
-            @include Media(md) {
+            @include Media(sm) {
                 width: 100% !important;
 
                 &_list {

@@ -147,7 +147,7 @@ header .logo { width: 300px; height: 80%; }
 
 .Footer_container { width: 70%; margin: auto; }
 
-@media (max-width: 900px) { .Footer_container { width: 90% !important; } }
+@media (max-width: 750px) { .Footer_container { width: 90% !important; } }
 
 .Footer_container .Footer_text { text-align: center; padding: 1rem; width: 100%; position: relative; cursor: pointer; margin-bottom: 2rem; }
 
@@ -161,7 +161,7 @@ header .logo { width: 300px; height: 80%; }
 
 .Footer_container .Footer_Social { width: 50%; margin: 1rem auto; }
 
-@media (max-width: 900px) { .Footer_container .Footer_Social { width: 100% !important; } }
+@media (max-width: 750px) { .Footer_container .Footer_Social { width: 100% !important; } }
 
 .Footer_container .Footer_Social_list { display: flex; align-items: center; justify-content: space-between; }
 
@@ -169,7 +169,7 @@ header .logo { width: 300px; height: 80%; }
 
 .Footer_container .Footer_nav { width: 50%; margin: 2rem auto; border-top: 2px solid #fff; padding-top: 1.5rem; }
 
-@media (max-width: 900px) { .Footer_container .Footer_nav { width: 100% !important; }
+@media (max-width: 750px) { .Footer_container .Footer_nav { width: 100% !important; }
   .Footer_container .Footer_nav_list { flex-wrap: wrap; }
   .Footer_container .Footer_nav_list .Footer_nav_item { margin-right: 0.5rem; } }
 
