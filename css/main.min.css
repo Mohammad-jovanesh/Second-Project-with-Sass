@@ -6,21 +6,21 @@ a { color: #000000; text-decoration: none; }
 
 html { font-family: "Roboto", sans-serif; }
 
-header { height: 100px; width: 100%; position: fixed; top: 0; left: 0; }
+.nav { width: 90%; height: 80%; margin-left: 10%; }
+
+.nav_list { display: flex; align-items: center; justify-content: space-between; height: 100%; }
+
+.nav_list_item_link { color: #fff; transition: all 0.2s ease; }
+
+.nav_list_item_link:hover { color: #444; transition: all 0.2s ease; }
+
+header { height: 100px; width: 100%; position: absolute; top: 16px; left: 0; }
 
 header .grid { display: flex; align-items: center; justify-content: center; }
 
 header .logo { width: 300px; height: 80%; }
 
-header .nav { width: 100%; height: 80%; }
-
-header .nav_list { display: flex; height: 100%; align-items: center; justify-content: space-evenly; }
-
-header .nav_list_item_link { color: #fff; transition: all 0.2s ease; }
-
-header .nav_list_item_link:hover { color: #444; transition: all 0.2s ease; }
-
-.Hero { width: 100%; height: 80vmin; min-height: 800px; background: linear-gradient(to right, #048ca8, #16db93); }
+.Hero { width: 100%; height: 80vmin; min-height: 800px; background: linear-gradient(to right, #048ca8, #16db93); padding-top: 1rem !important; }
 
 .Hero .grid { display: flex; align-items: center; }
 
@@ -34,14 +34,28 @@ header .nav_list_item_link:hover { color: #444; transition: all 0.2s ease; }
 
 .Hero .grid .hero_content .hero_btns { padding: 1.5rem 0rem 1rem; }
 
-.Hero .grid .hero_content .hero_btns_learn { border: 2px solid #fff; color: #fff; padding: 1rem 2rem; font-size: 0.8rem; margin-right: 0.5rem; font-weight: 100; text-transform: uppercase; transition: all 0.2s ease; }
+.Hero .grid .hero_content .hero_btns_learn { margin-right: 0.5rem; transition: all 0.2s ease; color: #fff; border: 2px solid #fff; padding: 1rem 2rem; font-size: 0.8rem; font-weight: 100; text-transform: uppercase; }
 
 .Hero .grid .hero_content .hero_btns_learn:hover { transition: all 0.2s ease; background-color: #fff; color: #048ca8; }
 
-.Hero .grid .hero_content .hero_btns_GetApp { color: #fff; padding: 1rem 2rem; font-size: 0.8rem; background-color: #d31869; text-transform: uppercase; transition: all 0.2s ease; font-weight: 100; border: 2px solid #d31869; }
+.Hero .grid .hero_content .hero_btns_GetApp { color: #fff; border: 2px solid #fff; padding: 1rem 2rem; font-size: 0.8rem; font-weight: 100; text-transform: uppercase; background-color: #d31869; transition: all 0.2s ease; border: 2px solid #d31869; }
 
 .Hero .grid .hero_content .hero_btns_GetApp:hover { background-color: #770e3b; border: 2px solid #770e3b; transition: all 0.2s ease; }
 
 .Hero .grid .hero_image { flex-basis: 33.33%; margin-top: 12rem; }
+
+.Sales_points { width: 100%; height: auto; padding: 2rem auto; }
+
+.Sales_points .conatiner { padding-top: 9rem; padding-bottom: 5rem; }
+
+.Sales_points .conatiner .heading { color: #048ca8; text-align: center; font-size: 2rem; font-weight: 400; text-transform: uppercase; margin-bottom: 4rem; }
+
+.Sales_points .conatiner .App_Options { display: flex; align-items: center; justify-content: center; color: #048ca8; }
+
+.Sales_points .conatiner .App_Options_item { text-align: center; margin: 0 1rem; }
+
+.Sales_points .conatiner .App_Options_item_head { margin-top: 1rem; margin-bottom: 0.5rem; font-size: 1.2rem; }
+
+.Sales_points .conatiner .App_Options_item_text { font-size: 0.9rem; font-weight: 300; }
 
 .conatiner { width: 90%; max-width: 1200px; height: 100%; margin: 0 auto; }

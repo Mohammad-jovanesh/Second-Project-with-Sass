@@ -1,0 +1,28 @@
+$Font-Size: (
+    xl: 3rem,
+    lg: 2.5rem,
+    md: 2rem,
+    sm: 1.8rem,
+    xs: 1.2rem,
+);
+$Font-Weight: (
+    ligth: 300,
+    normal: 400,
+    bold: 700,
+    B_blod: 900,
+);
+
+@function Size($size: 16rem) {
+    @if (map-has-key($Font-Size, $size)) {
+        @return map-get($Font-Size, $size);
+    } @else {
+        @return 1rem;
+    }
+}
+@function Weight($width: 300) {
+    @if (map-has-key($Font-Weight, $width)) {
+        @return map-get($Font-Weight, $width);
+    } @else {
+        @return 300;
+    }
+}

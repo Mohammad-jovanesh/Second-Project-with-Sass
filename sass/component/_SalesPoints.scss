@@ -1,0 +1,36 @@
+.Sales_points {
+    width: 100%;
+
+    height: auto;
+    padding: 2rem auto;
+    .conatiner {
+        padding-top: 9rem;
+        padding-bottom: 5rem;
+        .heading {
+            color: Color(1);
+            text-align: center;
+            font-size: Size(md);
+            font-weight: Weight(normal);
+            text-transform: uppercase;
+            margin-bottom: 4rem;
+        }
+        .App_Options {
+            @include DispalyFlex(center, center);
+            color: Color(1);
+            &_item {
+                text-align: center;
+                margin: 0 1rem;
+
+                &_head {
+                    margin-top: 1rem;
+                    margin-bottom: 0.5rem;
+                    font-size: Size(xs);
+                }
+                &_text {
+                    font-size: 0.9rem;
+                    font-weight: Weight(ligth);
+                }
+            }
+        }
+    }
+}

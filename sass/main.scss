@@ -1,7 +1,12 @@
 @import "basic/basic";
+@import "abstracts/Mixins";
 @import "abstracts/colors";
+@import "abstracts/type";
+@import "component/navigation";
 @import "component/header";
+@import "component/Btn";
 @import "component/hero";
+@import "component/SalesPoints";
 .conatiner {
     width: 90%;
     max-width: 1200px;

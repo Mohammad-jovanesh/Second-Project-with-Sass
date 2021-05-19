@@ -3,6 +3,7 @@ $Color: (
     2: rgba(22, 219, 14, 1),
     3: #fff,
     4: rgba(211, 24, 105, 1),
+    5: linear-gradient(to right, #048ca8, #16db93),
 );
 
 @function Color($MyColor: #fff) {
