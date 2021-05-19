@@ -4,6 +4,15 @@ header {
     position: absolute;
     top: 16px;
     left: 0;
+    @include Media(xs) {
+        .grid {
+            justify-content: flex-start !important;
+        }
+        .logo {
+            width: 200px !important;
+            height: 50% !important;
+        }
+    }
     .grid {
         @include DispalyFlex(center, center);
     }

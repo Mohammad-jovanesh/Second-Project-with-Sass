@@ -22,6 +22,9 @@
         z-index: -1;
     }
     &_container {
+        @include Media(xs) {
+            width: 90% !important;
+        }
         width: 70%;
         margin: auto;
         .Footer_text {
@@ -55,6 +58,9 @@
         .Footer_Social {
             width: 50%;
             margin: 1rem auto;
+            @include Media(xs) {
+                width: 100% !important;
+            }
             &_list {
                 @include DispalyFlex(center, space-between);
                 .Footer_Social_item {
@@ -72,7 +78,16 @@
             margin: 2rem auto;
             border-top: 2px solid Color(3);
             padding-top: 1.5rem;
+            @include Media(xs) {
+                width: 100% !important;
 
+                &_list {
+                    flex-wrap: wrap;
+                    .Footer_nav_item {
+                        margin-right: 0.5rem;
+                    }
+                }
+            }
             &_list {
                 @include DispalyFlex(center, space-between);
                 .Footer_nav_item {

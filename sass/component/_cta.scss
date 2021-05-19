@@ -11,6 +11,16 @@
     background-color: #16db93;
     background-blend-mode: multiply;
     color: Color(3);
+    @include Media(xs) {
+        &_text,
+        &_heading {
+            text-align: center;
+            width: 80%;
+        }
+        &_heading {
+            font-size: 1rem;
+        }
+    }
     .cta_text {
         margin-bottom: 1rem;
     }

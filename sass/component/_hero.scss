@@ -21,7 +21,11 @@
             display: none;
         }
     }
-
+    @include Media(xs) {
+        padding-top: 10rem !important;
+        height: 100vh;
+        min-height: 80vh;
+    }
     .grid {
         display: flex;
         align-items: center;
@@ -51,6 +55,14 @@
             }
             .hero_btns {
                 padding: 1.5rem 0rem 1rem;
+                @include Media(xs) {
+                    @include DispalyFlex(center, center);
+                    flex-direction: column;
+                    &_learn {
+                        margin-right: 0rem !important;
+                        margin-bottom: 1rem;
+                    }
+                }
                 &_learn {
                     margin-right: 0.5rem;
                     transition: all 0.2s ease;
